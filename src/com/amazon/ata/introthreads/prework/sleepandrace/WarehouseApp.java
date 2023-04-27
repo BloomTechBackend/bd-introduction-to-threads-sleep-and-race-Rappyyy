@@ -36,6 +36,11 @@ public class WarehouseApp {
      */
     public static void sleepThread(int milliseconds) {
 
+        try {
+            Thread.sleep(milliseconds);
+        } catch (InterruptedException e) {
+        }
+
     }
 
     /**
